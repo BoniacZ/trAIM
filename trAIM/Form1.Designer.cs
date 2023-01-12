@@ -44,6 +44,7 @@ namespace trAIM
             this.btnTryb1 = new System.Windows.Forms.Button();
             this.btnTryby = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLogo = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panelGameInfo = new System.Windows.Forms.Panel();
             this.lblTrafienia = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@ namespace trAIM
             this.panelSideMenu.SuspendLayout();
             this.panelStaty.SuspendLayout();
             this.panelTryby.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelGameInfo.SuspendLayout();
             this.panelGame.SuspendLayout();
             this.SuspendLayout();
@@ -246,11 +248,24 @@ namespace trAIM
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // lblLogo
+            // 
+            this.lblLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblLogo.AutoSize = true;
+            this.lblLogo.Font = new System.Drawing.Font("Freestyle Script", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(132)))), ((int)(((byte)(240)))));
+            this.lblLogo.Location = new System.Drawing.Point(21, 18);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(183, 95);
+            this.lblLogo.TabIndex = 0;
+            this.lblLogo.Text = "trAIM";
             // 
             // gameTimer
             // 
@@ -285,7 +300,7 @@ namespace trAIM
             // 
             this.lblCzas.AutoSize = true;
             this.lblCzas.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCzas.Location = new System.Drawing.Point(426, 18);
+            this.lblCzas.Location = new System.Drawing.Point(454, 20);
             this.lblCzas.Name = "lblCzas";
             this.lblCzas.Size = new System.Drawing.Size(149, 70);
             this.lblCzas.TabIndex = 3;
@@ -337,11 +352,12 @@ namespace trAIM
             // 
             this.lblOpis.AutoSize = true;
             this.lblOpis.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblOpis.Location = new System.Drawing.Point(323, 372);
+            this.lblOpis.Location = new System.Drawing.Point(298, 243);
             this.lblOpis.Name = "lblOpis";
             this.lblOpis.Size = new System.Drawing.Size(398, 45);
             this.lblOpis.TabIndex = 1;
             this.lblOpis.Text = "kliknij aby rozpocząć";
+            this.lblOpis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnStart
             // 
@@ -353,7 +369,6 @@ namespace trAIM
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(1042, 573);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "START";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -376,6 +391,8 @@ namespace trAIM
             this.panelSideMenu.ResumeLayout(false);
             this.panelStaty.ResumeLayout(false);
             this.panelTryby.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panelGameInfo.ResumeLayout(false);
             this.panelGameInfo.PerformLayout();
             this.panelGame.ResumeLayout(false);
@@ -412,6 +429,7 @@ namespace trAIM
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblOpis;
         private System.Windows.Forms.Label lblTrafienia;
+        private System.Windows.Forms.Label lblLogo;
     }
 }
 
